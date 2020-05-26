@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="navigation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEw-Rd-qfu">
+                        <rect key="frame" x="10" y="5" width="334" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-xL-SOy">
+                                <rect key="frame" x="10" y="10" width="314" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MrM-xL-SOy" secondAttribute="trailing" constant="10" id="Pgx-I4-Cb8"/>
+                            <constraint firstAttribute="bottom" secondItem="MrM-xL-SOy" secondAttribute="bottom" constant="10" id="f3H-ij-Ygd"/>
+                            <constraint firstItem="MrM-xL-SOy" firstAttribute="top" secondItem="eEw-Rd-qfu" secondAttribute="top" constant="10" id="u8y-9D-0BI"/>
+                            <constraint firstItem="MrM-xL-SOy" firstAttribute="leading" secondItem="eEw-Rd-qfu" secondAttribute="leading" constant="10" id="v0a-gU-0Ox"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eEw-Rd-qfu" secondAttribute="bottom" constant="5" id="0It-1k-FjE"/>
+                    <constraint firstAttribute="trailing" secondItem="eEw-Rd-qfu" secondAttribute="trailing" constant="10" id="eTW-6d-c0r"/>
+                    <constraint firstItem="eEw-Rd-qfu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sZu-0g-MP4"/>
+                    <constraint firstItem="eEw-Rd-qfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zmC-gK-oZA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="MrM-xL-SOy" id="O1W-Y1-Sne"/>
+                <outlet property="view" destination="eEw-Rd-qfu" id="hpH-Pb-uFB"/>
+            </connections>
+            <point key="canvasLocation" x="181.15942028985509" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
